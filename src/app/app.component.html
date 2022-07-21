@@ -1,1 +1,20 @@
-<h1>Backend</h1>
+<h3>Cardápio</h3>
+<form [formGroup]="form" (ngSubmit)="adicionarProduto()">
+  <input formControlName="nome" type="text" placeholder="Produto" />
+  R$ <input formControlName="preco" type="number" />
+  <input [disabled]="form.invalid" type="submit" value="Adicionar" />
+</form>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Nome</th>
+    <th>Preço</th>
+    <th></th>
+  </tr>
+  <tr *ngFor="let produto of produtos">
+    <td>{{ produto.id }}</td>
+    <td>{{ produto.nome }}</td>
+    <td>{{ produto.preco }}</td>
+    <td><button (click)="excluir(produto)">Excluir</button></td>
+  </tr>
+</table>

@@ -6,11 +6,6 @@
       "preco": 10.5
     },
     {
-      "id": 4,
-      "nome": "X-Picanha",
-      "preco": 14.5
-    },
-    {
       "id": 5,
       "nome": "Coca cola lata",
       "preco": 5.5
@@ -24,6 +19,16 @@
       "nome": "X-Picanha",
       "preco": 20.5,
       "id": 8
+    },
+    {
+      "nome": "X-Tudão",
+      "preco": 25,
+      "id": 9
+    },
+    {
+      "nome": "Batata Frita",
+      "preco": 7,
+      "id": 10
     }
   ]
 }
